@@ -19,12 +19,10 @@ Or clone the repository by typing the following in your terminal: (This requires
 git clone git@github.com:jonathan-scholbach/epubFromGutenberg.git
 ```
 
-Then
-
-In a terminal, navigate to the directory `epubFromGutenberg`. In there, create and activate the virtual environment, and install the requirements:
+Then, in a terminal, navigate to the directory `epubFromGutenberg`. In there, create and activate the virtual environment, and install the requirements:
 
 ```
-virtualenv env --python=Python3
+virtualenv env --python=python3
 source env/bin/activate
 pip install -r requirements.txt
 ```

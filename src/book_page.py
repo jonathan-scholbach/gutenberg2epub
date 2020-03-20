@@ -36,16 +36,14 @@ class BookPage:
     def raw_content(self):
         hr_pattern = re.compile("<hr.*?</hr>(.*?)<hr.*?</hr>", re.DOTALL)
         a_pattern = re.compile("<a(.*?)/a>", re.DOTALL)
-        space_pattern = re.compile(" +")
         content = re.findall(hr_pattern, self.raw_html)[0]
         content = re.sub(a_pattern, "", content).replace("\n", " ")
-        content = re.sub(space_pattern, " ", content)
 
         return content
 
     @cached_property
     def content(self):
-        space_p = (re.compile('\s\s+'), " ")
+        space_p = (re.compile("\s+"), " ")
 
         h_ps = [
             (re.compile(f'<h\d*? class="{classname}">.*?</h\d>'), "")
@@ -76,7 +74,7 @@ class BookPage:
         )
         content = self.raw_content.replace("&nbsp;", " ")
 
-        for pattern in [space_p, image_p, figure_p, motto_p, p_p, *h_ps]:
+        for pattern in [*h_ps, image_p, figure_p, motto_p, p_p, space_p]:
             content = re.sub(pattern[0], pattern[1], content)
 
         return content

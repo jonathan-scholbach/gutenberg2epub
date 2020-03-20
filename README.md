@@ -1,7 +1,5 @@
 _epubFromGutenberg_ is a tool for creating free e-books from __Projekt Gutenberg__, a collection of public domain literature (https://www.projekt-gutenberg.org/).
 
-This is a preliminary version scraping a book into one html file and an associated yml-file containing the metadata of the book.
-
 # Prerequisites
 
 1. This tool needs `pandoc` to be installed on your system. For a guide how to install pandoc, see https://pandoc.org/installing.html.
@@ -21,12 +19,10 @@ Or clone the repository by typing the following in your terminal: (This requires
 git clone git@github.com:jonathan-scholbach/epubFromGutenberg.git
 ```
 
-Then
-
-In a terminal, navigate to the directory `epubFromGutenberg`. In there, create and activate the virtual environment, and install the requirements:
+Then, in a terminal, navigate to the directory `epubFromGutenberg`. In there, create and activate the virtual environment, and install the requirements:
 
 ```
-virtualenv env --python=Python3
+virtualenv env --python=python3
 source env/bin/activate
 pip install -r requirements.txt
 ```

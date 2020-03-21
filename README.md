@@ -51,4 +51,4 @@ This will create a directory `books` and within this a directory for the author 
 
 # Bug Reporting
 
-This tool is just a prototype. It has not been tested thoroughly against different special cases of books that might occur on Projekt Gutenberg. If you find a bug, feel free to file an issue in the issues section of the GitHub repository.
+This tool is just a prototype. It has not been tested thoroughly against different special cases of books that might occur on Projekt Gutenberg. There might be books formatted in a different way, which the tool does not process correctly. If you find a bug, feel free to file an issue in the issues section of the GitHub repository. When doing so, please add the link to the book you wanted to fetch in the issue's description.

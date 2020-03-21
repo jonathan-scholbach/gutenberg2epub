@@ -4,10 +4,9 @@ _epubFromGutenberg_ is a tool for creating free e-books from __Projekt Gutenberg
 
 1. This tool needs `pandoc` to be installed on your system. For a guide how to install pandoc, see https://pandoc.org/installing.html.
 
-2. This tool runs on `Python3`. Get it at https://www.python.org/downloads/
+2. This tool runs on `Python3`. Get it at https://www.python.org/downloads/. Make sure Python is in your PATH. This is a description how to add Python to your PATH on Windows: https://projects.raspberrypi.org/en/projects/using-pip-on-windows/4.
 
-3. You should run the tool in a virtual environment. After having Python3 installed, run `pipx install virtualenv` in a terminal.
-
+3. You should run the tool in a virtual environment. After having Python3 installed, run `pip3 install virtualenv` in a terminal. 
 
 # Download and Installation
 
@@ -29,10 +28,21 @@ pip install -r requirements.txt
 
 # Use
 
-To generate an e book, navigate to `epubFromGutenberg` in a terminal. In there run `epub.py` and pass the url of the title page of the book as argument to the script:
+To generate an e book, navigate to `epubFromGutenberg` in a terminal. In there, you have to activate the virtual environment. 
+
+On Windows, run:
 
 ```
+\env\Scripts\activate.bat
+```
+
+On Linux or Mac run:
+```
 source env/bin/activate
+```
+
+Then you can invoke the script `epub.py` and pass the url of the title page of the book as an argument:
+```
 python epub.py <URL-OF-TITLEPAGE>
 ```
 

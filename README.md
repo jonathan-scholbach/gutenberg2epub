@@ -1,4 +1,4 @@
-_epubFromGutenberg_ is a tool for creating free e-books from __Projekt Gutenberg__, a collection of public domain literature (https://www.projekt-gutenberg.org/).
+_gutenberg2epub_ is a tool for creating free e-books from __Projekt Gutenberg__, a collection of public domain literature (https://www.projekt-gutenberg.org/).
 
 # Prerequisites
 

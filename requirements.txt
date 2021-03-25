@@ -10,7 +10,7 @@ click==7.1.1
 idna==2.9
 pathspec==0.7.0
 pyaml==20.3.1
-PyYAML==5.3.1
+PyYAML==5.4
 regex==2020.2.20
 requests==2.23.0
 soupsieve==2.0
